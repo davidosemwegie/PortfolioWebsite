@@ -1,0 +1,54 @@
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+  
+body {
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Karla', sans-serif;
+    line-height: 20px;
+    background-color: pink;
+    -webkit-font-smoothing: antialiased;
+}
+
+#Header {
+    /* height: 8em; */
+    background-color: white;
+    text-align: center;
+    padding: 2em;
+}
+
+#name {
+    font-size: 30pt;
+    padding: 1em;
+    margin: auto;
+    text-align: center;
+}
+
+#nav {
+    margin: auto;
+    width: 60%;
+}
+
+#nav ul {
+    list-style-type: none;
+    /* margin: 0; */
+    padding: 0;
+}
+
+#nav ul li {
+    display: inline;
+    padding: 1em;
+}
+
+.navLink {
+    text-decoration: none;
+    font-size: 20pt;
+    color: darksalmon;
+}
+
+.navLink:hover {
+    color: darkslategray;
+}

@@ -4,7 +4,7 @@ const TerminalEntry = (props) => {
     return (
         <div id="TerminalEntrySectionContainer">
             <ul>
-                <li><code id="TerminalEntrySection"> > David.{props.section}:</code></li>
+                <li><code id="TerminalEntrySection"> > David.{props.section} :</code></li>
                 <li><code id="TerminalEntrySectionDetails">{'=>'} {props.children}</code></li>
             </ul>
         </div>

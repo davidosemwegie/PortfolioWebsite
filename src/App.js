@@ -5,17 +5,20 @@ import './style.css'
 import Header from './components/Header'
 import Terminal from './components/Terminal'
 import Footer from './components/Footer';
+import Resume from './components/Resume'
 
 class App extends Component {
   render() {
     return (
       <div>
         <Header name="OSAHON DAVID OSEMWEGIE" />
-        <div id="TerminalSection">
-          <p id="aboutIntroText">HELLO, WORLD! I'M A DEVELOPER.</p>
+        <div id="TerminalSection" className="PageSection">
           <Terminal />
         </div>
-        <Footer />
+        <div id="ResumeSection" className="PageSection">
+          <Resume />
+        </div>
+        {/* <Footer /> */}
       </div>
     );
   }

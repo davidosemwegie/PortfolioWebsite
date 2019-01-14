@@ -4,7 +4,9 @@ import TerminalEntry from './TerminalEntry'
 
 const Terminal = (props) => {
     return (
-        <div id="TerminalWindow">
+        <div>
+            <h1 className="sectionTitle">HELLO, WORLD! I'M A DEVELOPER.</h1>
+            <div id="TerminalWindow">
             <TerminalEntry section="education">"University Of British Columbia"</TerminalEntry>
             <TerminalEntry section="major">"Honours in Computer Science"</TerminalEntry>
             <TerminalEntry section="expectedGraduation">"June 2019"</TerminalEntry>
@@ -19,6 +21,7 @@ const Terminal = (props) => {
             {'}'}
             </TerminalEntry>
             <TerminalEntry section="email"><a href="mailto: dosemwegie@gmail.com">dosemwegie@gmail.com</a></TerminalEntry>
+        </div>
         </div>
     );
 }

@@ -13,6 +13,13 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* REUSEABLE */
+
+.PageSection{
+    padding: 2em;
+    padding-bottom: 4em;
+}
+
 /* HEADER */
 
 #Header {
@@ -22,11 +29,14 @@ body {
     padding: 1em;
     position: fixed;
     top: 0;
+    z-index: 100;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); */
+    /* , 0 6px 20px 0 rgba(0, 0, 0, 0.1); */
 }
 
 #name {
     font-size: 30pt;
-    padding: 0.75em;
+    padding: 0.5em;
     margin: auto;
     text-align: center;
 }
@@ -50,7 +60,7 @@ body {
 .navLink {
     text-decoration: none;
     font-size: 20pt;
-    color: darksalmon;
+    color: darkslategray;
 }
 
 .navLink:hover {
@@ -59,25 +69,29 @@ body {
 
 /* TERMINAL */
 
-#aboutIntroText{
+.sectionTitle{
     text-align: center;
-    color: black;
-    font-size: 20pt;
-    padding: 1em;
+    color: white;
+    font-size: 15pt;
+    font-weight: bold;
+    margin-bottom: 1em;
+    /* padding: 0.5em; */
 }
 
 #TerminalSection {
-    margin-top: 13em;
+    margin-top: 9em;
+    position: relative;
+    background-color: darkslategray;
 }
 
 #TerminalWindow {
     margin: auto;
-    width: 60%;
+    width: 50%;
     /* height: 20em; */
     background-color: rgb(44, 43, 43);
     border-radius: 10px;
     border-top: solid rgb(240, 240, 240) 20px;
-    padding: 1.5em;
+    padding: 1em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
@@ -112,17 +126,55 @@ body {
     color: lightskyblue
 }
 
+/* RESUME SECTION */
+
+#resumePaper {
+    width: 60%;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 
+                0 6px 20px 0 rgba(0, 0, 0, 0.3),
+                0 5px 500px 0 rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    border-radius: 2px;
+    margin-bottom: 2em;
+    /* height: 10em; */
+}
+
+#ResumeSection {
+    background-color: darksalmon;
+    width: 100%;
+    position: relative;
+    padding: 1em;
+}
+
+.resumeSectionHeader{
+    font-size: 15pt;
+    font-weight: 100;
+    padding: 1em 0em 1em 0em;
+    border-bottom: solid 1px rgba(131, 131, 131, 0.5);
+    width: 90%;
+    margin: auto;
+}
+
+
 /* FOOTER */
 
 #Footer {
     width: 100%;
     background-color: rgb(240, 240, 240) ;
-    position: fixed;
-    bottom: 0;
+    /* position: relative; */
+    /* bottom: 0; */
+    margin-top: -40px;
+
+    /* clear: both; */
+    position: relative;
+    height: 4.5em;
+    margin-top: -1.5em;
 }
 
 #footerText {
-    padding: 0.5em;
+    padding: 1em;
     text-align: center;
     font-size: 15pt;
     color: rgb(131, 131, 131)

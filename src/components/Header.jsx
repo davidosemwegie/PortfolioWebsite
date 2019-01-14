@@ -3,7 +3,7 @@ import React from 'react';
 const Header = (props) => {
     return (
         <div id="Header">
-            <h1 id="name">DAVID OSEMWEGIE</h1>
+            <h1 id="name">{props.name}</h1>
             <div id="nav">
                 <ul>
                     <li><a className='navLink' href="">ABOUT</a></li>

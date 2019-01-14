@@ -9,20 +9,24 @@ body {
     font-size: 14px;
     font-family: 'Karla', sans-serif;
     line-height: 20px;
-    background-color: pink;
+    background-color: white;
     -webkit-font-smoothing: antialiased;
 }
 
+/* HEADER */
+
 #Header {
-    /* height: 8em; */
+    width: 100%;
     background-color: white;
     text-align: center;
-    padding: 2em;
+    padding: 1em;
+    position: fixed;
+    top: 0;
 }
 
 #name {
     font-size: 30pt;
-    padding: 1em;
+    padding: 0.75em;
     margin: auto;
     text-align: center;
 }
@@ -51,4 +55,75 @@ body {
 
 .navLink:hover {
     color: darkslategray;
+}
+
+/* TERMINAL */
+
+#aboutIntroText{
+    text-align: center;
+    color: black;
+    font-size: 20pt;
+    padding: 1em;
+}
+
+#TerminalSection {
+    margin-top: 13em;
+}
+
+#TerminalWindow {
+    margin: auto;
+    width: 60%;
+    /* height: 20em; */
+    background-color: rgb(44, 43, 43);
+    border-radius: 10px;
+    border-top: solid rgb(240, 240, 240) 20px;
+    padding: 1.5em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* TERMINAL ENTRY*/
+#TerminalEntrySectionContainer {
+    margin: 1.5em;
+    font-size: 15pt;
+}
+
+#TerminalEntrySectionContainer ul{
+    list-style-type: none;
+}
+
+#TerminalEntrySectionContainer ul li {
+    margin: 0.5em;
+}
+
+#TerminalEntrySection {
+    color: white;
+}
+
+#TerminalEntrySectionDetails{
+    color: rgb(207, 207, 207);
+    margin-left: 1.3em; 
+}
+
+#TerminalEntrySectionDetails a {
+    color: lightskyblue
+}
+
+#TerminalEntrySectionDetails a:visited {
+    color: lightskyblue
+}
+
+/* FOOTER */
+
+#Footer {
+    width: 100%;
+    background-color: rgb(240, 240, 240) ;
+    position: fixed;
+    bottom: 0;
+}
+
+#footerText {
+    padding: 0.5em;
+    text-align: center;
+    font-size: 15pt;
+    color: rgb(131, 131, 131)
 }
